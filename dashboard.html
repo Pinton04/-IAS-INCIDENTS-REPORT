@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report New Incident</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .first-aid-box {
+      background-color: #fff3cd;
+      border-left: 5px solid #ffc107;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+    .first-aid-box h3 {
+      margin-top: 0;
+      color: #856404;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Incident Reporting</h1>
+
+    <div class="first-aid-box">
+      <h3>🩹 First Aid Reminder</h3>
+      <ul>
+        <li>✅ Stay calm and ensure your safety first.</li>
+        <li>📞 Call emergency services if the injury is serious.</li>
+        <li>🧼 Stop bleeding using clean cloth or bandage.</li>
+        <li>🧊 Apply cold compress to reduce swelling if needed.</li>
+        <li>📍 Record what happened and who was involved.</li>
+      </ul>
+    </div>
+
+    <form id="incidentForm">
+      <h2>Report New Incident</h2>
+      <input type="text" id="title" placeholder="Incident Title" required />
+      <input type="text" id="location" placeholder="Location of Incident" required />
+      <textarea id="description" placeholder="Describe the incident..." required></textarea>
+      <select id="impact" required>
+        <option value="">Select Impact Level</option>
+        <option value="High">High</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Low">Low</option>
+      </select>
+      <button type="submit">Submit Report</button>
+      <button type="button" onclick="signOut()">Logout</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

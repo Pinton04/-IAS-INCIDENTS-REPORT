@@ -1,0 +1,83 @@
+/* General Body and Container */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdf6f6; /* soft background for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.2); /* dark red glow */
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #b30000; /* rescue red */
+  margin-bottom: 20px;
+}
+
+/* Inputs and Buttons */
+input, textarea, select, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #cc0000;
+  outline: none;
+}
+
+button {
+  background: #cc0000; /* strong red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #990000;
+}
+
+/* Incident List and Admin Panel Styles */
+#incidentList div, #adminPanel div {
+  background: #fff4f4; /* light alert background */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #cc0000;
+  border-radius: 5px;
+}
+
+/* Business Impact Report */
+#biaReport {
+  background-color: #ffeaea; /* very light red background */
+  border-left: 5px solid #cc0000;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #660000; /* deep red for emphasis */
+  font-weight: 600;
+  min-height: 50px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 20px;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Panel - Incident Reports</h1>
+
+    <h2>Reported Incidents</h2>
+    <div id="incidentList"></div>
+
+    <h2>Admin Panel: Update Incident Status</h2>
+    <div id="adminPanel"></div>
+
+    <h2>Business Impact Recommendation</h2>
+    <div id="biaReport"></div>
+    <button onclick="signOut()">Logout</button>
+    <a href="index.html"><button style="margin-top: 10px;">Back to Report Page</button></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
